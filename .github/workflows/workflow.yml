@@ -1,0 +1,19 @@
+name: Workflow prectice
+
+on: push
+
+# on:  # when does it start?
+#     push:  # on push
+#         branches: [main]
+    
+#     schedule:
+#       - cron: "0 0 * * *"  # on midnight
+
+jobs:
+    test:
+        runs-on: ubuntu-lastest
+        steps:
+          - run: echo "Hello, World!"
+        #   - uses: actions/checkout@v3
+        #   - run: pip install -r requirements.txt
+        #   - run: pytest
